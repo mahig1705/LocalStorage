@@ -3,7 +3,6 @@ class Process:
         self.pid = pid
         self.alive = True
 
-
 def ring_election(processes, initiator_index):
     print(f"\nLeader crashed! Election started by Process {processes[initiator_index].pid}")
 
@@ -25,9 +24,7 @@ def ring_election(processes, initiator_index):
     print(f"\nNew Coordinator is Process {new_leader}")
     return new_leader
 
-
 processes = [Process(1), Process(2), Process(3), Process(4)]
-
 print("Initial Leader is Process 4")
 
 processes[3].alive = False

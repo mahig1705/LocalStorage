@@ -25,6 +25,7 @@ nodes=[Node(1),Node(2),Node(3),Node(4),Node(5)]
 print("Initial Coordinator is Node 5\n")
 
 nodes[4].alive = False
+
 print("Node 5 FAILED\n")
 
 coordinator = bully_election(nodes, nodes[0])
